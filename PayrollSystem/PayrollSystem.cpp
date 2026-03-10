@@ -1,20 +1,35 @@
-// PayrollSystem.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include "PayrollSystem.h"
+
+
+void PayrollSystem::InitializeUI()
+{
+	int ch;
+	Employee emp;
+
+	do
+	{
+		std::cout << "--------------------XYZ Company Payroll System--------------------" << std::endl;
+		std::cout << "1. Add Employee" << endl;
+		std::cout << "2. Display Employee" << endl;
+		std::cout << "3. Generate Pay Slip" << endl;
+		std::cout << "4. Ext" << endl;
+		std::cout << "Enter your choice" << endl;
+
+		std::cin >> ch;
+
+		switch (ch)
+		{
+			case 1: std::cout << "Option 1 entered" << endl;
+				break;
+			default:std::cout << "No valid option" << endl;
+		}
+
+	} while (ch != 4);
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    PayrollSystem system;
+    system.InitializeUI();
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

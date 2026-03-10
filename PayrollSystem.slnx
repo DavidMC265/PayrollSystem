@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="PayrollSystem/PayrollSystem.vcxproj" />
+  <Project Path="PayrollSystem/PayrollSystem.vcxproj" Id="3a35f800-6d56-4053-a15b-13058d8742b9" />
 </Solution>
